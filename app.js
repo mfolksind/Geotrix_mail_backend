@@ -7,9 +7,8 @@ const app = express();
 
 // CORS - Allow only your frontend domain
 const corsOptions = {
-  origin: process.env.FRONTEND_URL  ,
-  methods: ['GET', 'POST'],
-  credentials: true,
+  origin: "*"  ,
+  methods: ['GET', 'POST']
 };
 app.use(cors(corsOptions));
 
